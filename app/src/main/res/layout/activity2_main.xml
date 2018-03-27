@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:padding = "6dp"
+        android:layout_span = "3">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Name "
+                android:textColor = "#ff000000"/>
+            <EditText
+                android:id ="@+id/ediName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span = "6"
+                android:text ="type your name"
+                />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id= "@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text = "CLEAR"
+            android:textColor = "#ff000000"
+            android:onClick="clearClicked"/>
+        <Button
+            android:id = "@+id/print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/clear"
+            android:padding = "10px"
+            android:text ="PRINT"
+            android:textColor = "#ff000000"
+            android:onClick="printClicked"/>
+        <TextView
+            android:id ="@+id/printArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/print"
+            android:text = "contents"
+            android:textColor = "#ff000000"/>
+    </RelativeLayout>
+</LinearLayout>
