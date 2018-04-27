@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context="e.jiwon.myapplication.NewActivity2">
+
+    <TableRow>
+        <TextView android:text="성명"/>
+        <TextView
+            android:id="@+id/name"
+            android:text = ""/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text = "성별"/>
+        <TextView
+            android:id="@+id/gender"
+            android:text=""/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="수신여부" />
+        <TextView
+            android:id="@+id/receive"
+            android:text=""/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="이전"
+            android:id="@+id/previous"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column = "7"/>
+    </TableRow>
+</TableLayout>
