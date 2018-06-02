@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.jiwon.lab6.lab6_2">
+
+    <TableRow
+        android:layout_span = "3"
+        android:gravity = "center">
+        <TextView
+            android:text="Shared Preference Example" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop = "20dp">
+        <TextView
+            android:text="학번"/>
+
+        <EditText
+            android:id="@+id/sn"
+            android:layout_span="2"
+            android:hint="..." />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop = "20dp">
+        <TextView
+            android:layout_span = "1"
+            android:text = "이름"/>
+        <EditText
+            android:id = "@+id/snm"
+            android:layout_span = "2"
+            android:hint = "..."/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text = "불러오기"
+            android:id = "@+id/call"/>
+        <Button
+            android:text = "저장하기"
+            android:id = "@+id/save"/>
+        <Button
+            android:text = "초기화"
+            android:id = "@+id/initialize"/>
+    </TableRow>
+
+</TableLayout>
